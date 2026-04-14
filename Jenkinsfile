@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/nivivarshna4/scm.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean compile'
